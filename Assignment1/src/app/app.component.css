@@ -1,0 +1,35 @@
+
+
+
+p, table, button {
+  font-family: 'Arial', sans-serif;
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 10px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#warning {
+  color: #ff5555;
+  font-size: 16px;
+  font-weight: bold;
+}
+h2{
+  color: dodgerblue;
+}
+button{
+  background-color: dodgerblue;
+}
+
