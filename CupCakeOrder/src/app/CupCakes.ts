@@ -1,5 +1,7 @@
+import {CupCakeTypes} from "./CupCakeTypes";
+
 export class CupCakes {
 NumberOfCupCakes :Number=0;
-TypeOfCupcake: string="Red Velvet";
+TypeOfCupcake:CupCakeTypes =CupCakeTypes.REDVELVET;
 
 }

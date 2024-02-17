@@ -1,0 +1,19 @@
+<button (click)="goBack()"><-</button><h2>  Select Type of Cupcakes</h2>
+<p>
+  <label><input type="radio" name="choice"
+                [value]="CupCakeTypes.VANILA"
+                [(ngModel)]="cupCakes.TypeOfCupcake"> Vanila</label><br>
+  <label><input type="radio" name="choice"
+                [value]="CupCakeTypes.CHOCOLATE"
+                [(ngModel)]="cupCakes.TypeOfCupcake"> Chocolate</label><br>
+  <label><input type="radio" name="choice"
+                [value]="CupCakeTypes.REDVELVET"
+                [(ngModel)]="cupCakes.TypeOfCupcake"> Red Velvet</label><br>
+  <label><input type="radio" name="choice"
+                [value]="CupCakeTypes.SALTEDCARAMEL"
+                [(ngModel)]="cupCakes.TypeOfCupcake"> Salted Caramel</label><br>
+  <label><input type="radio" name="choice"
+                [value]="CupCakeTypes.COFFEE"
+                [(ngModel)]="cupCakes.TypeOfCupcake"> Coffee</label><br>
+</p>
+<button (click)="cancel()">Cancel</button> &nbsp;&nbsp;<button (click)="goToNext()">Next</button>

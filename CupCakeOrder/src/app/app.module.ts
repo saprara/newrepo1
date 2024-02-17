@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
 import { OutputComponent } from './output/output.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { OutputComponent } from './output/output.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

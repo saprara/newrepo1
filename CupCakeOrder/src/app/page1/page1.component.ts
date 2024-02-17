@@ -7,17 +7,18 @@ import {CupCakes} from "../CupCakes";
   templateUrl: './page1.component.html',
   styleUrl: './page1.component.css'
 })
+
 export class Page1Component {
-cupCakes : CupCakes=new CupCakes();
+  cupCakes : CupCakes=new CupCakes();
   constructor(private router: Router) {
   }
 
-  NumberCupcakes = 0;
+
 
 
   NumberOfCupcakes(value: number) {
-    this.NumberCupcakes = value;
-    this.router.navigate(['input2']);
+    this.cupCakes.NumberOfCupCakes = value;
+    this.router.navigate(['input2']),{ state: { cupCakes: this.cupCakes } };
   }
 
 }
