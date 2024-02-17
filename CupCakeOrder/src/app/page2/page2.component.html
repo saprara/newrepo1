@@ -16,4 +16,7 @@
                 [value]="CupCakeTypes.COFFEE"
                 [(ngModel)]="cupCakes.TypeOfCupcake"> Coffee</label><br>
 </p>
+
+<h3>Subtotal = $ {{ cupCakes.NumberOfCupCakes * 2 }}</h3>
+
 <button (click)="cancel()">Cancel</button> &nbsp;&nbsp;<button (click)="goToNext()">Next</button>

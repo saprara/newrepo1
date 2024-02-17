@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {Router} from "@angular/router";
 import {CupCakeTypes} from "../CupCakeTypes";
+import{Page1Component}from "../page1/page1.component";
+
 
 
 @Component({
@@ -9,6 +11,7 @@ import {CupCakeTypes} from "../CupCakeTypes";
   styleUrl: './page2.component.css'
 })
 export class Page2Component {
+
   cupCakes: any; // Define the cupCakes object
 
   constructor(private router: Router) {
@@ -28,7 +31,7 @@ export class Page2Component {
   }
 
   goToNext() {
-    this.router.navigate(['/output', this.cupCakes]);
+    this.router.navigate(['/output'], { state: { cupCakes: this.cupCakes } });
   }
   protected readonly CupCakeTypes = CupCakeTypes;
 }

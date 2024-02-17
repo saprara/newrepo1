@@ -1,1 +1,15 @@
-<p>output works!</p>
+<button (click)="goBack()"><-</button><h2>ORDER SUMMARY</h2>
+<div>
+<h3>QUANTITY</h3>
+<p>{{cupCakes.NumberOfCupCakes}} CupCakes</p>
+</div>
+<div>
+  <h3>FLAVOUR</h3>
+  <p>{{cupCakes.TypeOfCupcake}}</p>
+</div>
+<div>
+  <h3>Subtotal = $ {{ cupCakes.NumberOfCupCakes * 2 }}</h3>
+</div>
+<div>
+  <button>Send Order</button> &nbsp;&nbsp;<button (click)="cancel()">Cancel</button>
+</div>

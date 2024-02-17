@@ -18,7 +18,7 @@ export class Page1Component {
 
   NumberOfCupcakes(value: number) {
     this.cupCakes.NumberOfCupCakes = value;
-    this.router.navigate(['input2']),{ state: { cupCakes: this.cupCakes } };
+    this.router.navigate(['input2'], { state: { cupCakes: this.cupCakes } });
   }
 
 }
