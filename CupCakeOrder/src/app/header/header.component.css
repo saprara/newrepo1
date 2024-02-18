@@ -1,10 +1,9 @@
-h1,p{
-  align-content: center;
-  font-family: Constantia;
+h1 {
+  color: pink;
+  text-align: center;
 }
-h1{
-  color: darkblue;
-}
-p{
-  color: cadetblue;
+
+p {
+  color: purple;
+  text-align: center;
 }

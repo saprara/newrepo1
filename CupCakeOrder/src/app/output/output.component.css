@@ -1,0 +1,38 @@
+/* orderSummary.css */
+.order-summary {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid pink;
+  border-radius: 10px;
+  background-color: lavender;
+}
+
+.order-summary h2 {
+  color: purple;
+  text-align: center;
+}
+
+.order-summary div {
+  margin-bottom: 10px;
+}
+
+.order-summary h3 {
+  color: purple;
+}
+
+.order-summary p {
+  color: purple;
+}
+
+.order-summary button {
+  background-color: pink;
+  color: purple;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.order-summary button:hover {
+  background-color: lightpink;
+}

@@ -1,0 +1,11 @@
+button, label {
+  background-color: pink;
+  color: purple;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+h2, h3 {
+  color: purple;
+}
