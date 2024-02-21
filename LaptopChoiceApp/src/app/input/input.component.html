@@ -1,2 +1,30 @@
-<p>input works!</p>
+
+
+<h2>Enter Processor Information</h2>
+<form (ngSubmit)="onSubmit()" #myForm="ngForm">
+  <div>
+    <label>Your Name: <input type="text" name="userName" #name="ngModel"
+                             [(ngModel)]="ProcessorInfo.ProcessorModelName" required pattern="(.|\s)*\S(.|\s)*"></label>
+    <span [hidden]="name.valid || name.untouched" class="error"> &larr; required</span>
+  </div>
+  <br>
+  <div>
+    <label><input type="radio" name="choice"
+                  [value]="ProcessorManufacturer.INTEL"
+                  [(ngModel)]="ProcessorInfo.Manufacturer"> Chicken</label><br>
+    <label><input type="radio" name="choice"
+                  [value]="ProcessorManufacturer.INTEL"
+                  [(ngModel)]="ProcessorInfo.Manufacturer"> Fish</label><br>
+    <label><input type="radio" name="choice"
+                  [value]="ProcessorManufacturer.INTEL"
+                  [(ngModel)]="ProcessorInfo.Manufacturer"> Vegetarian</label>
+  </div>
+  <br>
+  <div>
+    <input type="checkbox" id="windowsCompatibility" name="windowsCompatibility">
+    <label for="windowsCompatibility">Windows 11 Compatibility</label>
+  </div>
+  <br>
+  <button type="submit" [disabled]="myForm.form.invalid">Submit</button>
+</form>
 
