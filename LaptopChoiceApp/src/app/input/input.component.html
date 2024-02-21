@@ -4,23 +4,23 @@
 <form (ngSubmit)="onSubmit()" #myForm="ngForm">
   <div>
     <label>Your Name: <input type="text" name="userName" #name="ngModel"
-                             [(ngModel)]="ProcessorInfo.ProcessorModelName" required pattern="(.|\s)*\S(.|\s)*"></label>
+                             [(ngModel)]="processorInfo.ProcessorModelName" required pattern="(.|\s)*\S(.|\s)*"></label>
     <span [hidden]="name.valid || name.untouched" class="error"> &larr; required</span>
   </div>
   <br>
   <div>
     <label><input type="radio" name="choice"
                   [value]="ProcessorManufacturer.INTEL"
-                  [(ngModel)]="ProcessorInfo.Manufacturer"> Chicken</label><br>
+                  [(ngModel)]="processorInfo.Manufacturer"> Chicken</label><br>
     <label><input type="radio" name="choice"
                   [value]="ProcessorManufacturer.INTEL"
-                  [(ngModel)]="ProcessorInfo.Manufacturer"> Fish</label><br>
+                  [(ngModel)]="processorInfo.Manufacturer"> Fish</label><br>
     <label><input type="radio" name="choice"
                   [value]="ProcessorManufacturer.INTEL"
-                  [(ngModel)]="ProcessorInfo.Manufacturer"> Vegetarian</label>
+                  [(ngModel)]="processorInfo.Manufacturer"> Vegetarian</label>
   </div>
   <br><div>
-  <input type="checkbox" id="windowsCompatibility" name="windowsCompatibility" [(ngModel)]="ProcessorInfo.Window11Comp">
+  <input type="checkbox" id="windowsCompatibility" name="windowsCompatibility" [(ngModel)]="processorInfo.Window11Comp">
   <label for="windowsCompatibility">Windows 11 Compatibility</label>
 </div>
   <br>
