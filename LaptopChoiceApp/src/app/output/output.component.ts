@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ProcessorInfo} from "../ProcessorInfo";
+import {ProcessorService} from "../ProcessorService";
 
 @Component({
   selector: 'app-output',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './output.component.css'
 })
 export class OutputComponent {
-
+  processorInfo: ProcessorInfo;
+  constructor(service: ProcessorService) {
+    this.processorInfo = service.processorInfo;
+  }
 }

@@ -19,11 +19,10 @@
                   [value]="ProcessorManufacturer.INTEL"
                   [(ngModel)]="ProcessorInfo.Manufacturer"> Vegetarian</label>
   </div>
-  <br>
-  <div>
-    <input type="checkbox" id="windowsCompatibility" name="windowsCompatibility">
-    <label for="windowsCompatibility">Windows 11 Compatibility</label>
-  </div>
+  <br><div>
+  <input type="checkbox" id="windowsCompatibility" name="windowsCompatibility" [(ngModel)]="ProcessorInfo.Window11Comp">
+  <label for="windowsCompatibility">Windows 11 Compatibility</label>
+</div>
   <br>
   <button type="submit" [disabled]="myForm.form.invalid">Submit</button>
 </form>

@@ -5,4 +5,5 @@ export class ProcessorInfo {
   Manufacturer:ProcessorManufacturer=ProcessorManufacturer.INTEL;
   Window11Comp:boolean=false;
 
+
 }
