@@ -8,8 +8,7 @@ import {ProcessorManufacturer} from "../ProcessorManufacturer";
   styleUrl: './input.component.css'
 })
 export class InputComponent {
-  constructor(private service: MealPreferenceService, private router: Router) {
-  }
+
   protected readonly ProcessorInfo = ProcessorInfo;
   protected readonly ProcessorManufacturer = ProcessorManufacturer;
 }
