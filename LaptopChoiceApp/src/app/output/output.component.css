@@ -1,0 +1,20 @@
+h2 {
+  color: #333;
+}
+
+.label {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

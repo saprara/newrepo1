@@ -21,6 +21,6 @@ export class InputComponent {
     this.router.navigate(["/output"]);
   }
 
-  protected readonly ProcessorInfo = ProcessorInfo;
+
   protected readonly ProcessorManufacturer = ProcessorManufacturer;
 }
