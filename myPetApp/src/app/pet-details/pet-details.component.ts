@@ -5,8 +5,9 @@ import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-pet-details',
-  templateUrl: './pet-details.component.html',
-  standalone: true,
+  templateUrl: 'pet-details.component.html',
+
+
   styleUrls: ['./pet-details.component.css']
 })
 export class PetDetailsComponent {

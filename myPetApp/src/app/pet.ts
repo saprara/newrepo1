@@ -1,8 +1,8 @@
 export class Pet {
-  public id: string = '';
+  public id: number= 0;
   public name: string = '';
   public petKind: string = '';
-  public age: string = '';
+  public age: number= 0;
   public image: string = '';
-  public ownerId: string = '';
+  public ownerId: number = 0;
 }

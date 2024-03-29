@@ -4,12 +4,12 @@ export interface PictureJson {
 }
 
 export interface PetJson {
-  id: string;
+  id: number;
   name: string;
   petKind: string;
-  age: string;
+  age: number;
   image: string;
-  ownerId: string;
+  ownerId: number;
 }
 
 export interface CatalogJson {
