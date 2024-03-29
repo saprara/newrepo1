@@ -21,7 +21,7 @@ import {RouterModule, RouterOutlet} from "@angular/router";
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-RouterOutlet,
+    RouterOutlet,
     RouterModule
 
   ],
