@@ -1,5 +1,4 @@
 
-
 <h2>Enter Processor Information</h2>
 <form (ngSubmit)="onSubmit()" #myForm="ngForm">
   <div>
@@ -11,13 +10,13 @@
   <div>
     <label><input type="radio" name="choice"
                   [value]="ProcessorManufacturer.INTEL"
-                  [(ngModel)]="processorInfo.Manufacturer"> Chicken</label><br>
+                  [(ngModel)]="processorInfo.Manufacturer">INTEL</label><br>
     <label><input type="radio" name="choice"
-                  [value]="ProcessorManufacturer.INTEL"
-                  [(ngModel)]="processorInfo.Manufacturer"> Fish</label><br>
+                  [value]="ProcessorManufacturer.AMD"
+                  [(ngModel)]="processorInfo.Manufacturer">AMD</label><br>
     <label><input type="radio" name="choice"
-                  [value]="ProcessorManufacturer.INTEL"
-                  [(ngModel)]="processorInfo.Manufacturer"> Vegetarian</label>
+                  [value]="ProcessorManufacturer.APPLE"
+                  [(ngModel)]="processorInfo.Manufacturer">APPLE</label>
   </div>
   <br><div>
   <input type="checkbox" id="windowsCompatibility" name="windowsCompatibility" [(ngModel)]="processorInfo.Window11Comp">

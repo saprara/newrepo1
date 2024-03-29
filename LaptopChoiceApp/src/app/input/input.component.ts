@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {ProcessorInfo} from "../ProcessorInfo";
 import {ProcessorManufacturer} from "../ProcessorManufacturer";
 import {ProcessorService} from "../ProcessorService";
@@ -18,7 +18,7 @@ export class InputComponent {
   onSubmit(): void {
     this.processorInfo.ProcessorModelName= this.processorInfo.ProcessorModelName.trim();
     this.service.submitProcessorInfo(this.processorInfo);
-    this.router.navigate(["/output"]);
+    this.router.navigate(["output"]);
   }
 
 
