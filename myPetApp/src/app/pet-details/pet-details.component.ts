@@ -14,10 +14,13 @@ export class PetDetailsComponent {
   pet: Pet | undefined;
 
   constructor(petDataService: PetDataService, activatedRoute: ActivatedRoute) {
-
-    const id: string | null = activatedRoute.snapshot.paramMap.get('id');
-    if (id != null) {
-      this.pet = petDataService.getPet(id);
+    const idParam = activatedRoute.snapshot.paramMap.get('id');
+    const id: number | null = idParam !== null ? +idParam : null;
+    if (!isNaN(id!)) {
+      this.pet = petDataService.getPet(id!);
     }
   }
+
 }
+
+
